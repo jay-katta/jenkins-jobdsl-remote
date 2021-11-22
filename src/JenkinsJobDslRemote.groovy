@@ -4,7 +4,8 @@ import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
 // import JenkinsJobConstants
-File JenkinsJobConstants = new File(getClass().getClassLoader().getResource("jobs/JenkinsJobConstants.groovy").getFile());
+@Grab(group="jobs.JenkinsJobConstants", module="JenkinsJobConstants")
+// File JenkinsJobConstants = new File(getClass().getClassLoader().getResource("jobs/JenkinsJobConstants.groovy").getFile());
 // import model.JobsModel
 File JobsModel = new File(getClass().getClassLoader().getResource("model/JobsModel.groovy").getFile());
 // import model.MultibranchModel
@@ -44,7 +45,7 @@ execute(workspace?.toURI()?.getPath() + DEFAULT_PIPELINE_SCRIPT_JSON_PATH)
 void execute(String jobsFile) {
     // Load model
     println "[INFO][JSON Parser] Try to parse JSON file from ${jobsFile}"
-    JobsModel.JobsModel jobsModel = loadAndParseModel(jobsFile)
+    JobsModel jobsModel = loadAndParseModel(jobsFile)
     println "[INFO][JSON Parser] Finished..."
 
     if (jobsModel != null) {
