@@ -1,9 +1,9 @@
 package validator
 
-import model.BaseJobDslPipelineModel
-import model.JobsModel
-import model.MultibranchModel
-import model.PipelineJobModel
+load "model/BaseJobDslPipelineModel.groovy"
+load "model/JobsModel.groovy"
+load "model/MultibranchModel.groovy"
+load "model/PipelineJobModel.groovy"
 
 final class ModelValidator {
     /**

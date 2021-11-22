@@ -4,11 +4,11 @@ import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
 load "jobs/JenkinsJobConstants.groovy"
-import model.JobsModel
-import model.MultibranchModel
-import model.PipelineJobModel
-import parser.Json2ModelParser
-import validator.ModelValidator
+load "model/JobsModel.groovy"
+load "model/MultibranchModel.groovy"
+load "model/PipelineJobModel.groovy"
+load "parser/Json2ModelParser.groovy"
+load "validator/ModelValidator.groovy"
 import hudson.model.Executor
 import hudson.model.Result
 
