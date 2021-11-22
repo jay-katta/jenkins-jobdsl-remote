@@ -1,4 +1,4 @@
-package validator
+// package validator
 
 // import model.BaseJobDslPipelineModel
 File BaseJobDslPipelineModel = new File(getClass().getClassLoader().getResource("model/BaseJobDslPipelineModel.groovy").getFile());
