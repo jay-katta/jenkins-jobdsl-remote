@@ -1,8 +1,8 @@
 package parser
 
 import groovy.json.JsonSlurper
-BaseJobDslPipelineModel = load "model/BaseJobDslPipelineModel.groovy"
-JobsModel = load "model/JobsModel.groovy"
+import model.BaseJobDslPipelineModel
+import model.JobsModel
 
 final class Json2ModelParser {
 
