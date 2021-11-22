@@ -1,9 +1,13 @@
 package validator
 
-import model.BaseJobDslPipelineModel
-import model.JobsModel
-import model.MultibranchModel
-import model.PipelineJobModel
+// import model.BaseJobDslPipelineModel
+File BaseJobDslPipelineModel = new File(getClass().getClassLoader().getResource("model/BaseJobDslPipelineModel.groovy").getFile());
+// import model.JobsModel
+File JobsModel = new File(getClass().getClassLoader().getResource("model/JobsModel.groovy").getFile());
+// import model.MultibranchModel
+File MultibranchModel = new File(getClass().getClassLoader().getResource("model/MultibranchModel.groovy").getFile());
+// import model.PipelineJobModel
+File PipelineJobModel = new File(getClass().getClassLoader().getResource("model/PipelineJobModel.groovy").getFile());
 
 final class ModelValidator {
     /**
