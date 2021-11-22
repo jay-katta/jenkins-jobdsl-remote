@@ -4,7 +4,7 @@ import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
 load "jobs/JenkinsJobConstants.groovy"
-load "model/JobsModel.groovy"
+jobsModel = load "model/JobsModel.groovy"
 load "model/MultibranchModel.groovy"
 load "model/PipelineJobModel.groovy"
 load "parser/Json2ModelParser.groovy"
