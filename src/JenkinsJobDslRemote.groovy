@@ -3,12 +3,12 @@ import groovy.transform.Field
 import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
-load "jobs/JenkinsJobConstants.groovy"
+JenkinsJobConstants = load "jobs/JenkinsJobConstants.groovy"
 jobsModel = load "model/JobsModel.groovy"
-load "model/MultibranchModel.groovy"
-load "model/PipelineJobModel.groovy"
-load "parser/Json2ModelParser.groovy"
-load "validator/ModelValidator.groovy"
+MultibranchModel = load "model/MultibranchModel.groovy"
+PipelineJobModel = load "model/PipelineJobModel.groovy"
+Json2ModelParser = load "parser/Json2ModelParser.groovy"
+ModelValidator = load "validator/ModelValidator.groovy"
 import hudson.model.Executor
 import hudson.model.Result
 
