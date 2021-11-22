@@ -4,12 +4,17 @@ import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
 // import JenkinsJobConstants
-File JenkinsJobConstants = new File(getClass().getClassLoader().getResource("jobs/JenkinsJobConstants.gtoovy").getFile());
-import model.JobsModel
-import model.MultibranchModel
-import model.PipelineJobModel
-import parser.Json2ModelParser
-import validator.ModelValidator
+File JenkinsJobConstants = new File(getClass().getClassLoader().getResource("jobs/JenkinsJobConstants.groovy").getFile());
+// import model.JobsModel
+File JobsModel = new File(getClass().getClassLoader().getResource("model/JobsModel.groovy").getFile());
+// import model.MultibranchModel
+File MultibranchModel = new File(getClass().getClassLoader().getResource("model/MultibranchModel.groovy").getFile());
+// import model.PipelineJobModel
+File PipelineJobModel = new File(getClass().getClassLoader().getResource("model/PipelineJobModel.groovy").getFile());
+// import parser.Json2ModelParser
+File Json2ModelParser = new File(getClass().getClassLoader().getResource("parser/Json2ModelParser.groovy").getFile());
+// import validator.ModelValidator
+File ModelValidator = new File(getClass().getClassLoader().getResource("validator/ModelValidator.groovy").getFile());
 import hudson.model.Executor
 import hudson.model.Result
 
