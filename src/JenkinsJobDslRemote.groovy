@@ -3,7 +3,7 @@ import groovy.transform.Field
 import hudson.model.TopLevelItem
 import hudson.model.View
 import jenkins.model.Jenkins
-import jobs.JenkinsJobConstants
+import "jobs/JenkinsJobConstants.groovy"
 import model.JobsModel
 import model.MultibranchModel
 import model.PipelineJobModel
