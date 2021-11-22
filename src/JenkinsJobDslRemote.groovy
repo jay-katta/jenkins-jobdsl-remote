@@ -44,7 +44,7 @@ execute(workspace?.toURI()?.getPath() + DEFAULT_PIPELINE_SCRIPT_JSON_PATH)
 void execute(String jobsFile) {
     // Load model
     println "[INFO][JSON Parser] Try to parse JSON file from ${jobsFile}"
-    JobsModel jobsModel = loadAndParseModel(jobsFile)
+    JobsModel.JobsModel jobsModel = loadAndParseModel(jobsFile)
     println "[INFO][JSON Parser] Finished..."
 
     if (jobsModel != null) {
